@@ -3,7 +3,8 @@
 
 using namespace std;
 
-void print_subs(string input, string output){
+string print_subs(string input, string output){
+    static string s = "";
     if(input.empty()){
         cout << output << endl;
         return;
